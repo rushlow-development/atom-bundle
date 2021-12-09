@@ -1,0 +1,34 @@
+{
+    "name": "rushlow-development/atom-bundle",
+    "description": "Symfony Bundle for Atom",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=8.0",
+        "symfony/http-kernel": "^6.0",
+        "symfony/dependency-injection": "^6.0",
+        "symfony/config": "^6.0",
+        "rushlow-development/atom": "dev-main"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "symfony/phpunit-bridge": "^6.0"
+    },
+    "license": "Apache-2.0",
+    "autoload": {
+        "psr-4": {
+            "RushlowDevelopment\\AtomBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RushlowDevelopment\\Test\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jesse Rushlow",
+            "email": "jr@rushlow.dev"
+        }
+    ],
+    "minimum-stability": "dev"
+}
